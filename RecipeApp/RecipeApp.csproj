@@ -57,31 +57,99 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\MainView\AddProduct.xaml.cs">
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Recipe.cs" />
+    <Compile Include="ViewModel\AddProductViewModel.cs" />
+    <Compile Include="ViewModel\AddRecipeViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="View\Add product\AddingProductView.xaml.cs">
+      <DependentUpon>AddingProductView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add product\DescriptionOfProduct.xaml.cs">
+      <DependentUpon>DescriptionOfProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add product\NutritionalValuesOfProduct.xaml.cs">
+      <DependentUpon>NutritionalValuesOfProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add product\SaveProduct.xaml.cs">
+      <DependentUpon>SaveProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add recipe\AddingProductToRecipe.xaml.cs">
+      <DependentUpon>AddingProductToRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add recipe\AddingRecipeView.xaml.cs">
+      <DependentUpon>AddingRecipeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add recipe\DescriptionOfRecipe.xaml.cs">
+      <DependentUpon>DescriptionOfRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add recipe\ProductsInRecipe.xaml.cs">
+      <DependentUpon>ProductsInRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add recipe\SaveRecipe.xaml.cs">
+      <DependentUpon>SaveRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindow\AddProduct.xaml.cs">
       <DependentUpon>AddProduct.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainView\AddRecipe.xaml.cs">
+    <Compile Include="View\MainWindow\AddRecipe.xaml.cs">
       <DependentUpon>AddRecipe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainView\CheckRecipe.xaml.cs">
+    <Compile Include="View\MainWindow\CheckRecipe.xaml.cs">
       <DependentUpon>CheckRecipe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainView\ShowRecipe.xaml.cs">
+    <Compile Include="View\MainWindow\ShowRecipe.xaml.cs">
       <DependentUpon>ShowRecipe.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\MainView\AddProduct.xaml">
+    <Page Include="View\Add product\AddingProductView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainView\AddRecipe.xaml">
+    <Page Include="View\Add product\DescriptionOfProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainView\CheckRecipe.xaml">
+    <Page Include="View\Add product\NutritionalValuesOfProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainView\MainWindow.xaml">
+    <Page Include="View\Add product\SaveProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Add recipe\AddingProductToRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Add recipe\AddingRecipeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Add recipe\DescriptionOfRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Add recipe\ProductsInRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Add recipe\SaveRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow\AddProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow\AddRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow\CheckRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -89,11 +157,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="View\MainView\MainWindow.xaml.cs">
+    <Compile Include="View\MainWindow\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\MainView\ShowRecipe.xaml">
+    <Page Include="View\MainWindow\ShowRecipe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,11 +192,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
-    <Folder Include="View\Add product\" />
-    <Folder Include="View\Add recipe\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
