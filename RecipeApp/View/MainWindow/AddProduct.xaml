@@ -6,7 +6,10 @@
              xmlns:local="clr-namespace:RecipeApp.View.MainView"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Button Content="Add Product"
+            FontSize="20"
+            Padding="5"
+            >
             
-    </Grid>
+    </Button>
 </UserControl>
