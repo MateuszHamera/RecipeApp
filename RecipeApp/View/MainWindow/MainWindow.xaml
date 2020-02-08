@@ -18,8 +18,12 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
-        <local:AddProduct Grid.Row="4"/>
-
+            
+        <local:AddProduct Grid.Row="4" 
+                          Margin="10"
+                          />
+        <local:AddRecipe Grid.Row="4"
+                         Grid.Column="1"
+                         Margin="10"/>
     </Grid>
 </Window>
