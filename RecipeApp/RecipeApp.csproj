@@ -61,6 +61,7 @@
     <Compile Include="Model\Recipe.cs" />
     <Compile Include="ViewModel\AddProductViewModel.cs" />
     <Compile Include="ViewModel\AddRecipeViewModel.cs" />
+    <Compile Include="ViewModel\Command\DelegateCommand.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\Add product\AddingProductView.xaml.cs">
       <DependentUpon>AddingProductView.xaml</DependentUpon>
