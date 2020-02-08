@@ -22,8 +22,9 @@
                Grid.ColumnSpan="2"
                HorizontalAlignment="Center"
                FontSize="20"
-               FontWeight="Bold"/>
-        <Label Content="Select Recipe from ComboBox:"
+               FontWeight="Bold"
+               />
+        <Label Content="Load recipes from data base. Please click on the Logo ->"
                FontSize="14"
                FontWeight="Light"
                FontStyle="Italic"
@@ -31,11 +32,20 @@
                HorizontalAlignment="Center"
                Margin="10,0,0,5"
                />
+        <Label Content="Select Recipe from ComboBox:"
+               Grid.Row="1"
+               FontSize="14"
+               FontWeight="Light"
+               FontStyle="Italic"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Center"
+               Margin="10,0,0,5"
+               />
         <ComboBox IsTextSearchEnabled="True"
                   Grid.Row="1"
                   VerticalAlignment="Top"
                   HorizontalAlignment="Stretch"
-                  Margin="10,5,0,0"
+                  Margin="10,30,0,0"
                   >
             <!--<ComboBox.ItemContainerStyle>
                 <Style TargetType="ComboBoxItem">
@@ -49,6 +59,7 @@
                Grid.RowSpan="3"
                Margin="10,40,10,10"
                />
+        
         <local:ShowRecipe Grid.Row="3"
                           Grid.ColumnSpan="2"
                           />

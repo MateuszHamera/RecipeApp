@@ -99,6 +99,9 @@
     <Compile Include="View\MainWindow\CheckRecipe.xaml.cs">
       <DependentUpon>CheckRecipe.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\MainWindow\LoadRecipeFromDataBase.xaml.cs">
+      <DependentUpon>LoadRecipeFromDataBase.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow\ShowRecipe.xaml.cs">
       <DependentUpon>ShowRecipe.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MainWindow\CheckRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow\LoadRecipeFromDataBase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
