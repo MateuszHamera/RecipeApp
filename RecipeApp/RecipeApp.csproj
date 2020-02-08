@@ -62,6 +62,7 @@
     <Compile Include="ViewModel\AddProductViewModel.cs" />
     <Compile Include="ViewModel\AddRecipeViewModel.cs" />
     <Compile Include="ViewModel\Command\DelegateCommand.cs" />
+    <Compile Include="ViewModel\LoadRecipesFromDataBaseViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\Add product\AddingProductView.xaml.cs">
       <DependentUpon>AddingProductView.xaml</DependentUpon>
@@ -99,8 +100,8 @@
     <Compile Include="View\MainWindow\CheckRecipe.xaml.cs">
       <DependentUpon>CheckRecipe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainWindow\LoadRecipeFromDataBase.xaml.cs">
-      <DependentUpon>LoadRecipeFromDataBase.xaml</DependentUpon>
+    <Compile Include="View\MainWindow\LoadRecipesFromDataBase.xaml.cs">
+      <DependentUpon>LoadRecipesFromDataBase.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow\ShowRecipe.xaml.cs">
       <DependentUpon>ShowRecipe.xaml</DependentUpon>
@@ -153,7 +154,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainWindow\LoadRecipeFromDataBase.xaml">
+    <Page Include="View\MainWindow\LoadRecipesFromDataBase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

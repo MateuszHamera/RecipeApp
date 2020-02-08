@@ -10,12 +10,16 @@ namespace RecipeApp.ViewModel
     {
         public MainWindowViewModel()
         {
-            AddProductViewModel = new AddProductViewModel();
-            AddRecipeViewModel = new AddRecipeViewModel();
+            
+            AddProduct = new AddProductViewModel();
+            AddRecipe = new AddRecipeViewModel();
         }
 
-        public AddProductViewModel AddProductViewModel { get; }
-        public AddRecipeViewModel AddRecipeViewModel { get; }
+        public LoadRecipesFromDataBaseViewModel LoadRecipesFromDataBase { get; set; }
+        public AddProductViewModel AddProduct { get; }
+        public AddRecipeViewModel AddRecipe { get; }
+
+
         
     }
 }
