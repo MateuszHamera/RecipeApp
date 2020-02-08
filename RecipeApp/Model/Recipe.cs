@@ -8,5 +8,13 @@ namespace RecipeApp.Model
 {
     class Recipe
     {
+        public Recipe(List<Product> products)
+        {
+            Products = products;
+        }
+
+        public string Name { get; set; }
+        public int Number { get; set; }
+        public List<Product> Products { get; set; }
     }
 }
