@@ -6,7 +6,12 @@
              xmlns:local="clr-namespace:RecipeApp.View.MainView"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Button Content="Show Recipe"
+            FontSize="30"
+            FontWeight="ExtraBold"
+            Margin="10"
+            Padding="5"
+            Background="AliceBlue">
             
-    </Grid>
+    </Button>
 </UserControl>

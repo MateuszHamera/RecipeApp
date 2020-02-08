@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:RecipeApp.View.MainView"
         mc:Ignorable="d"
         Title="RecipeApp" Height="450" Width="800">
-    <Grid>
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -18,7 +18,40 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-            
+        <Label Content="That is special App for adding products and recipes"
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               FontSize="20"
+               FontWeight="Bold"/>
+        <Label Content="Select Recipe from ComboBox:"
+               FontSize="14"
+               FontWeight="Light"
+               FontStyle="Italic"
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Center"
+               Margin="10,0,0,5"
+               />
+        <ComboBox IsTextSearchEnabled="True"
+                  Grid.Row="1"
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Stretch"
+                  Margin="10,5,0,0"
+                  >
+            <!--<ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Height" Value="50" />
+                    <Setter Property="Width" Value="50" />
+                </Style>
+            </ComboBox.ItemContainerStyle>-->
+        </ComboBox>
+        <Image Source="D:\Users\Dom\Documents\RecipeApp\RecipeApp\View\MainWindow\Picture\jabex.png"
+               Grid.Column="1"
+               Grid.RowSpan="3"
+               Margin="10,40,10,10"
+               />
+        <local:ShowRecipe Grid.Row="3"
+                          Grid.ColumnSpan="2"
+                          />
         <local:AddProduct Grid.Row="4" 
                           Margin="10"
                           />

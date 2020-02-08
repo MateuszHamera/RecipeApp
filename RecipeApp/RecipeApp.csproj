@@ -195,5 +195,8 @@
   <ItemGroup>
     <Folder Include="Servives\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\MainWindow\Picture\jabex.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
