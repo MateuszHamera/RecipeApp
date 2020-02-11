@@ -1,15 +1,14 @@
-﻿using RecipeApp.ViewModel.Command;
-using System;
+﻿using RecipeApp.Model;
+using RecipeApp.ViewModel.Command;
+using SQLite;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace RecipeApp.ViewModel
 {
     class LoadRecipesFromDataBaseViewModel
     {
+        private List<Recipe> _recipes;
         public LoadRecipesFromDataBaseViewModel()
         {
             LoadRecipesFromDataBeseCommand = new DelegateCommand(LoadRecipesFromDataBese);
@@ -19,7 +18,13 @@ namespace RecipeApp.ViewModel
         
         public void LoadRecipesFromDataBese()
         {
-
+            using (SQLiteConnection connection = new SQLiteConnection(App.DatabasePath))
+            {
+                connection.CreateTable<Recipe>();
+                //_recipes = (connection.Table<Recipe>())
+                //    .OrderBy(r => r.Name)
+                //    .ToList();
+            }
         }
     }
 }
