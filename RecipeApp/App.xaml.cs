@@ -13,8 +13,12 @@ namespace RecipeApp
     /// </summary>
     public partial class App : Application
     {
-        static string Namedatabase = "Mydatabase.db";
         static string folderdatabase = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        public static string DatabasePath = System.IO.Path.Combine(folderdatabase, Namedatabase);
+
+        static string recipesNameDataBase = "Recipes.db";
+        public static string recipeDatabasePath = System.IO.Path.Combine(folderdatabase, recipesNameDataBase);
+
+        static string productsNameDataBase = "Products.db";
+        public static string productsDatabasePath = System.IO.Path.Combine(folderdatabase, productsNameDataBase);
     }
 }

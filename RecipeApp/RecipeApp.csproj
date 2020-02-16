@@ -76,6 +76,8 @@
     </ApplicationDefinition>
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\Recipe.cs" />
+    <Compile Include="Servives\ConnectWithProductsDataBase.cs" />
+    <Compile Include="Servives\ConnectWithRecipesDataBase.cs" />
     <Compile Include="ViewModel\AddProductViewModel.cs" />
     <Compile Include="ViewModel\AddRecipeViewModel.cs" />
     <Compile Include="ViewModel\Command\DelegateCommand.cs" />
@@ -219,9 +221,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Servives\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="View\MainWindow\Picture\jabex.png" />
   </ItemGroup>

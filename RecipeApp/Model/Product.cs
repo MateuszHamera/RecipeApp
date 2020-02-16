@@ -17,5 +17,6 @@ namespace RecipeApp.Model
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
         public string Name { get; set; }
+        public double Weight { get; set; }
     }
 }
