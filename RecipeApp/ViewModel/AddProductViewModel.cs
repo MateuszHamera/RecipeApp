@@ -1,4 +1,5 @@
-﻿using RecipeApp.ViewModel.Command;
+﻿using Prism.Mvvm;
+using RecipeApp.ViewModel.Command;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,7 @@ using System.Windows.Input;
 
 namespace RecipeApp.ViewModel
 {
-    class AddProductViewModel : INotifyPropertyChanged
+    class AddProductViewModel : BindableBase, INotifyPropertyChanged
     {
 
         public AddProductViewModel()
@@ -20,6 +21,7 @@ namespace RecipeApp.ViewModel
         public ICommand AddProductCommand;
 
         public event PropertyChangedEventHandler PropertyChanged;
+
 
 
         private void OnPropertyChanged(string propertyName)

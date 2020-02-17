@@ -18,7 +18,7 @@ namespace RecipeApp.ViewModel
         
         public void LoadRecipesFromDataBese()
         {
-            using (SQLiteConnection connection = new SQLiteConnection(App.DatabasePath))
+            using (SQLiteConnection connection = new SQLiteConnection(App.recipesDatabasePath))
             {
                 connection.CreateTable<Recipe>();
                 //_recipes = (connection.Table<Recipe>())

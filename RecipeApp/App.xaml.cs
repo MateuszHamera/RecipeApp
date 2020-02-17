@@ -16,7 +16,7 @@ namespace RecipeApp
         static string folderdatabase = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         static string recipesNameDataBase = "Recipes.db";
-        public static string recipeDatabasePath = System.IO.Path.Combine(folderdatabase, recipesNameDataBase);
+        public static string recipesDatabasePath = System.IO.Path.Combine(folderdatabase, recipesNameDataBase);
 
         static string productsNameDataBase = "Products.db";
         public static string productsDatabasePath = System.IO.Path.Combine(folderdatabase, productsNameDataBase);
